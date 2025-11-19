@@ -51,6 +51,5 @@ public class Livro {
     public void setIsbn(String isbn) { this.isbn = isbn; }
     public Autor getAutor() { return autor; }
     public void setAutor(Autor autor) { this.autor = autor; }
-    double retornaValor(){ return this.valor; }
     boolean temAutor() { return this.autor != null; }
 }

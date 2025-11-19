@@ -16,6 +16,7 @@ public class Ebook extends Livro {
     }
     
     // MÉTODO REESCRITO (Override) para omitir a linha "Impresso: true"
+   @Override
     void mostrarDetalhes(){
         System.out.println("Mostrando detalhes do livro ");
         // Usamos os getters da classe Livro (pai)
@@ -34,6 +35,7 @@ public class Ebook extends Livro {
     }
 
     // MÉTODO REESCRITO (Override) para a regra de 15%
+    @Override
     public boolean aplicaDescontoDe(double porcentagem) {
         if (porcentagem > 0.15) {
             return false;
